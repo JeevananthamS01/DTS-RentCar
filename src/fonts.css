@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Agrandir Regular";
+  src: url("/fonts/Agrandir-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Wide Light";
+  src: url("/fonts/Agrandir-WideLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Grand Heavy";
+  src: url("/fonts/Agrandir-GrandHeavy.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Grand Light";
+  src: url("/fonts/Agrandir-GrandLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Narrow";
+  src: url("/fonts/Agrandir-Narrow.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Text Bold";
+  src: url("/fonts/Agrandir-TextBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Thin Italic";
+  src: url("/fonts/Agrandir-ThinItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Tight";
+  src: url("/fonts/Agrandir-Tight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Agrandir Wide Black";
+  src: url("/fonts/Agrandir-WideBlackItalic.otf") format("opentype");
+}
