@@ -116,11 +116,11 @@ const OurModels = () => {
   const slideVariants = {
     enter: {
       opacity: 0,
-      x: 100,
+      x: 0,
       scale: 0.85,
-     transition: {
-      duration: 0,
-      }
+      transition: {
+        duration: 0,
+      },
     },
 
     center: {
@@ -128,17 +128,17 @@ const OurModels = () => {
       x: 0,
       scale: 1,
       transition: {
-      duration: 0.1,
-      }
+        duration: 0.1,
+      },
     },
 
     exit: {
       opacity: 0,
-      x: -100,
+      x: 0,
       scale: 0.85,
       transition: {
-      duration: 0,
-      }
+        duration: 0,
+      },
     },
   };
 
@@ -223,10 +223,7 @@ const OurModels = () => {
                 animate="center"
                 exit="exit"
                 drag="x"
-                dragConstraints={{
-                  left: 0,
-                  right: 0,
-                }}
+                dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={0.25}
                 onDragEnd={handleDragEnd}
                 className="
@@ -234,7 +231,11 @@ const OurModels = () => {
                 active:cursor-grabbing
                 flex
                 justify-center
+                items-center
                 w-full
+                aspect-[4/3]
+                sm:aspect-[16/10]
+                lg:aspect-[16/9]
               "
               >
                 <img
@@ -242,11 +243,8 @@ const OurModels = () => {
                   alt={cars[current].name}
                   draggable={false}
                   className="
-                  w-full
-                  max-w-[320px]
-                  sm:max-w-[450px]
-                  md:max-w-[560px]
-                  lg:max-w-[700px]
+                  max-h-full
+                  max-w-full
                   object-contain
                   select-none
                   pointer-events-none
