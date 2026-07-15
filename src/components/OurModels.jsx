@@ -116,11 +116,8 @@ const OurModels = () => {
   const slideVariants = {
     enter: {
       opacity: 0,
-      x: 0,
+      x: 200,
       scale: 0.85,
-      transition: {
-        duration: 0,
-      },
     },
 
     center: {
@@ -128,16 +125,16 @@ const OurModels = () => {
       x: 0,
       scale: 1,
       transition: {
-        duration: 0.1,
+        duration: 0.3,
       },
     },
 
     exit: {
       opacity: 0,
-      x: 0,
+      x: -200,
       scale: 0.85,
       transition: {
-        duration: 0,
+        duration: 0.3,
       },
     },
   };
