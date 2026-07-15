@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer
+    <section
       data-theme="dark"
       className="bg-black px-5 py-8 lg:px-10 lg:py-6 lg:min-h-screen flex flex-col"
     >
@@ -118,7 +118,7 @@ const Footer = () => {
           </span>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 

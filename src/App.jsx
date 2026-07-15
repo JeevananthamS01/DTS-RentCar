@@ -8,11 +8,13 @@ import CarLoop from "./components/CarLoop";
 import AboutUs from "./components/AboutUs";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ChatBtn from "./components/ChatBtn";
 
 const App = () => {
   return (
     <div className="w-[100%] mx-auto">
       <Navbar />
+      <ChatBtn />
        <Hero />
       <CarLoop />
       <AboutUs />
