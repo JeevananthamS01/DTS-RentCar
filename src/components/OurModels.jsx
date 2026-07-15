@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion, AnimatePresence, frame } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import frameImg from "../assets/hero/bg-frame.png";
 
 import innovaImg from "../assets/models/innovaImg.png";
@@ -116,8 +116,11 @@ const OurModels = () => {
   const slideVariants = {
     enter: {
       opacity: 0,
-      x: 200,
+      x: 100,
       scale: 0.85,
+     transition: {
+      duration: 0,
+      }
     },
 
     center: {
@@ -125,17 +128,17 @@ const OurModels = () => {
       x: 0,
       scale: 1,
       transition: {
-        duration: 0.6,
-      },
+      duration: 0.1,
+      }
     },
 
     exit: {
       opacity: 0,
-      x: -200,
+      x: -100,
       scale: 0.85,
       transition: {
-        duration: 0.4,
-      },
+      duration: 0,
+      }
     },
   };
 
@@ -289,12 +292,12 @@ const OurModels = () => {
               </motion.h3>
 
               {/* Specifications */}
-              <AnimatePresence>
+              <AnimatePresence mode="wait">
                 {hovered === current && (
                   <motion.div
-                    initial={{ opacity: 0, y: 15 }}
+                    initial={{ opacity: 0, y: 0 }}
                     animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 15 }}
+                    exit={{ opacity: 0, y: 0 }}
                     transition={{ duration: 0.3 }}
                     className="
                     mt-6
@@ -367,6 +370,7 @@ const OurModels = () => {
                 transition
                 hover:bg-white
                 hover:text-black
+                cursor-pointer
               "
               >
                 ←
@@ -404,6 +408,7 @@ const OurModels = () => {
                 transition
                 hover:bg-white
                 hover:text-black
+                cursor-pointer
               "
               >
                 →
