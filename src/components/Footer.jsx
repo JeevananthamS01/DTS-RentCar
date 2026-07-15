@@ -7,7 +7,7 @@ const Footer = () => {
       className="bg-black px-5 py-8 lg:px-10 lg:py-6 lg:min-h-screen flex flex-col"
     >
       {/* Top Content */}
-      <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-8 text-center lg:text-left">
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-start gap-8 text-start lg:text-left">
         {/* About */}
         <div className="max-w-[420px]">
           <h3
@@ -32,7 +32,7 @@ const Footer = () => {
         <nav>
           <ul
             style={{ fontFamily: "Agrandir Regular" }}
-            className="flex flex-col lg:flex-row items-center gap-4 lg:gap-6 text-white"
+            className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 text-white"
           >
             <li>
               <a href="#about" className="hover:text-white/70 transition">

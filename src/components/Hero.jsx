@@ -5,7 +5,7 @@ import Car360Viewer from "./Car360Viewer";
 
 const Hero = () => {
   return (
-    <section data-theme="dark" id="hero" className="relative h-[100vh] min-h-[600px] overflow-hidden">
+    <section data-theme="dark" id="hero" className="relative h-[80vh] lg:min-h-[600px] overflow-hidden">
       {/* Main */}
       <div className="relative w-full h-full">
         {/* Background Image */}
@@ -26,7 +26,7 @@ const Hero = () => {
         />
 
         {/* Content */}
-        <div className="relative z-20 container mx-auto px-4 sm:px-5 h-full flex flex-col justify-center items-center text-center">
+        <div className="absolute inset-0 top-[25%] md:top-[20%] z-20 container mx-auto px-4 sm:px-5 h-full flex flex-col text-center">
           <div className="flex flex-col items-center">
             <h1
               style={{ fontFamily: "Agrandir Wide Light" }}
@@ -34,14 +34,14 @@ const Hero = () => {
                 text-white font-bold
                 text-[28px] leading-[1.15]
                 sm:text-4xl md:text-[30px]
-                lg:text-[46px] xl:text-[50px] lg:leading-tight
+                lg:text-[50px] xl:text-[54px] lg:leading-tight
                 max-w-[280px] sm:max-w-md md:max-w-3xl lg:max-w-5xl px-2
               "
             >
               Find, Book & Rent Your Dream Car
             </h1>
 
-            <p
+            {/* <p
               style={{ fontFamily: "Agrandir Regular" }}
               className="
                 text-white/90 mt-3
@@ -51,7 +51,7 @@ const Hero = () => {
             >
               Discover premium vehicles at affordable prices.
               Rent anytime, anywhere with your Android and iOS devices.
-            </p>
+            </p> */}
 
             <button
               style={{ fontFamily: "Agrandir Regular" }}
@@ -70,12 +70,11 @@ const Hero = () => {
         {/* Car 360 Viewer  */}
         <div
           className="
-            absolute bottom-0 left-1/2 -translate-x-1/2 z-20
-            w-[90vw] max-w-[500px]
-            sm:max-w-[550px]
+            absolute bottom-30 lg:bottom-0 left-1/2 -translate-x-1/2 z-20
+            w-[100vw] max-w-[600px]
             md:max-w-[650px]
             lg:max-w-[760px]
-            xl:max-w-[800px]
+            xl:max-w-[900px]
             2xl:max-w-[1050px]
           "
         >

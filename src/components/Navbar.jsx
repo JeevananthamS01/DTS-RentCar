@@ -53,7 +53,7 @@ const Navbar = () => {
   const headerClass =
     "w-full fixed z-[10000] top-0 left-0 py-3 px-5 lg:py-4 lg:px-0 lg:mx-auto bg-gradient-to-r from-black/40 via-white/10 to-black/40 backdrop-blur-lg shadow-2xl border " +
     borderColor +
-    " lg:rounded-full transition-colors duration-500";
+    " rounded-full transition-colors duration-500";
 
   const titleClass =
     "text-xl lg:text-2xl " +

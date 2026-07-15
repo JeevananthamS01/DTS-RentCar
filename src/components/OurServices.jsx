@@ -220,7 +220,7 @@ const OurServices = () => {
                         absolute
                         bottom-6
                         left-1/2
-                        w-[88%] h-[30%]
+                        w-[90%] h-[30%]
                         -translate-x-1/2
                         rounded-[20px]
                         border

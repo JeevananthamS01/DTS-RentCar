@@ -266,7 +266,7 @@ const AboutUs = () => {
         id="about"
         className="relative min-h-screen overflow-hidden bg-black py-8 md:py-12 lg:py-0"
       >
-        <div className="mx-auto flex min-h-[calc(100vh-4rem)] w-full max-w-[1600px] flex-col lg:min-h-screen lg:flex-row md:min-h-[calc(100vh-6rem)]">
+        <div className="mx-auto flex min-h-[calc(100vh-4rem)] w-full flex-col lg:min-h-screen lg:flex-row md:min-h-[calc(100vh-6rem)]">
           {/* LEFT SIDE  */}
           <div className="relative flex w-full items-center justify-center py-4 lg:w-1/2 lg:py-0">
             {/* Decorative Frame  */}
